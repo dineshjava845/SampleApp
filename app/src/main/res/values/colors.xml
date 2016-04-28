@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="darkgray">#BBBBBB</color><!-- 3031333 -->
+    <color name="semidarkgray">#000000</color><!-- 393d3c -->
+    <color name="lightgray">#ebebeb</color><!-- ebebeb -->
+    <color name="green">#000000</color><!-- 76c70A -->
+    <color name="blue">#000000</color><!-- 00aef9 -->
+    <color name="black">#222222</color><!-- 3c3c3c -->
+    <color name="turq">#000000</color><!-- 85edb9 -->
+    <color name="darkturq">#000000</color><!-- 34bdb7 -->
+    <color name="red">#000000</color><!-- fc360e -->
+    <color name="orange">#000000</color><!-- fcb74d -->
+    <color name="dark_red">#000000</color><!-- bf1817 -->
+    <color name="yellow">#000000</color><!-- fec13e -->
+    <color name="darkYellow">#000000</color><!-- e5ac39 -->
+    <color name="purple">#000000</color><!-- 6953bd -->
+    <color name="darkpurple">#000000</color><!-- 5b42a5 -->
+    <color name="wizardBlue">#000000</color><!-- 0157A6 -->
+
+
+</resources>

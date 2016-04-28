@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    tools:context="com.boutline.sports.activity.InviteMembersActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/inviteMembersToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/inviteMembersBackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black" />
+
+        <TextView
+            android:id="@+id/inviteMembersToolbarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Invite to #manufanclub"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/inviteMembersSendTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingRight="10dp"
+            android:text="Send"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/inviteMembersScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inviteMembersToolbar"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/inviteMembersAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter email id to invite"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textCursorDrawable="@null" />
+
+            <LinearLayout
+                android:id="@+id/inviteMembersCustomLinkLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inviteMembersAutoCompleteTextView"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/inviteMembersCustomInviteLinkTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Custom invite link :"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/inviteMembersLinkTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="www.boutline.com/ref=6576"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Copy To Clipboard"
+                    android:id="@+id/inviteMembersCopyButton"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/inviteMembersListView"
+        android:layout_below="@+id/inviteMembersScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

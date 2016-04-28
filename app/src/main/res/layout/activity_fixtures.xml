@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/feed1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/date1Layout"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fixturesToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/leftMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_menu_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:paddingLeft="15dp"
+            android:id="@+id/fixturesToolbarTextView"
+            android:text="@string/fixtures"/>
+
+        <ImageView
+            android:id="@+id/rightMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:paddingRight="20dp"
+            android:src="@mipmap/ic_right_menu" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="?attr/actionBarSize"
+        android:clipToPadding="false"
+        android:layout_below="@id/fixturesToolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/gray_rounded_box"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/matchMonth"
+                    android:id="@+id/matchMonth"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/matchDate"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/matchDate"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/detailsL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                    <TextView
+                        android:id="@+id/gameTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/matchName"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/gameDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Emirates Stadium, 7:45 pm"
+                        android:textColor="@color/darkgray"
+                        android:textSize="14sp"
+                        android:paddingLeft="6dp"/>
+                    <TextView
+                        android:id="@+id/gameTour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/matchTour"
+                        android:textColor="@color/darkgray"
+                        android:layout_below="@id/gameDesc"
+                        android:textSize="12sp"
+                        android:paddingLeft="6dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/detailsL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_below="@id/detailsL1"
+                android:layout_marginBottom="25dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/gameTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/matchName"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/gameDesc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emirates Stadium, 7:45 pm"
+                    android:textColor="@color/darkgray"
+                    android:textSize="14sp"
+                    android:paddingLeft="6dp"/>
+                <TextView
+                    android:id="@+id/gameTour2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/matchTour"
+                    android:textColor="@color/darkgray"
+                    android:layout_below="@id/gameDesc"
+                    android:textSize="12sp"
+                    android:paddingLeft="6dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_below="@id/fixturesToolbar"
+        android:layout_marginTop="1dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="2dp"
+        android:background="#EFFFFFFF"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/searchtags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:background="@android:color/transparent"
+            android:imeOptions="actionSearch"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:textSize="12sp"
+            android:hint="Search team, games or tournaments"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/toolbarhr"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_below="@id/fixturesToolbar"/>
+</RelativeLayout>

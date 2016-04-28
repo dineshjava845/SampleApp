@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">XYZ Sports</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_me">MeActivity</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+
+    <!-- Strings for SignUpActivity -->
+    <string name="signup_button">Get Started Now</string>
+    <string name="login_textView">Login</string>
+
+    <!-- Strings for LoginActivity -->
+    <string name="title_activity_login">Login</string>
+    <string name="email_username_hint">john@doe.com</string>
+    <string name="signin_text">Sign in to XYZ.</string>
+    <string name="signin_button">Sign In</string>
+    <string name="forgot_password_text">Forgot password?</string>
+    <string name="dummypassword">&#9679;&#9679;&#9679;&#9679;&#9679;</string>
+    <string name="create_account_text">Don\'t have an account? <b>Sign up.</b></string>
+
+    <!-- Strings for RegisterActivity -->
+    <string name="title_activity_register">Sign Up For Boutline</string>
+    <string name="register_text">Sign Up For XYZ.</string>
+    <string name="fullname_edittext_hint">John Doe</string>
+    <string name="username_edittext_hint">johndoe</string>
+    <string name="email_edittext_hint">Email</string>
+    <string name="password_edittext_hint">Password</string>
+    <string name="show_password_checkbox">Show Password</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="sigin_text">Already have an account? <b>Sign in.</b></string>
+    <string name="remember_password">Remember your password? <b>Sign in.</b></string>
+
+    <!-- Strings for ForgotPasswordActivity -->
+    <string name="title_activity_login_help">Reset Password</string>
+    <string name="helper_email_editText_hint">Email</string>
+    <string name="reset_password">Reset Your Password.</string>
+    <string name="reset_password_button">Send reset link by email</string>
+
+
+    <string name="newsnhappenings"><b>News &amp; Happenings</b></string>
+    <string name="fixtures"><b>Fixtures</b></string>
+    <string name="predictions"><b>Predictions</b></string>
+
+    <string name="swipeleft">Swipe left to find out more. </string>
+    <string name="walkthrough0">Predict the outcome of games by tapping the team logos.</string>
+    <string name="walkthrough2">Create a group and invite your friends to play with them.</string>
+    <string name="walkthrough1">Earn points, top the leaderboard &amp; win amazing prizes every week.</string>
+    <string name="title_activity_advanced_settings">AdvancedSettingsActivity</string>
+    <string name="title_activity_push_notifications">PushNotificationsActivity</string>
+    <string name="title_activity_members">MembersActivity</string>
+    <string name="title_activity_member_invite">MemberInviteActivity</string>
+    <string name="title_activity_channel_settings">ChannelSettingsActivity</string>
+    <string name="title_predictions">Predictions</string>
+    <string name="title_activity_profile_settings">ProfileSettingsActivity</string>
+    <string name="title_activity_things_you_like">ThingsYouLikeActivity</string>
+    <string name="create_new_group"><b>Create new group</b></string>
+    <string name="searchtags">Search Teams, Tournaments &amp; Players</string>
+    <string name="username"><b>abcdef</b></string>
+    <string name="bo"><b>Bo</b></string>
+
+    <string name="group_name_hint">abcd Fan Club</string>
+    <string name="group_tags_label">Group Tags</string>
+    <string name="edit_group_tags">Edit Group Tags</string>
+    <string name="members">Members</string>
+    <string name="invite_others">Invite Others</string>
+    <string name="push_notification_settings">Push Notification Settings</string>
+    <string name="leave_group">Leave Group</string>
+    <string name="rename_group">Rename Group</string>
+    <string name="manunitedfansclub">ManUnitedFansClub</string>
+
+    <!-- Placeholder strings to be deleted later -->
+    <string name="matchName"><b>Manchester United vs Chelsea</b></string>
+    <string name="matchTour">English Premier League</string>
+    <string name="matchMonth"><b>Mar</b></string>
+    <string name="matchDate"><b>26</b></string>
+    <string name="creatorLabel">ManUnitedFanClub was created by @abcd on 14th April 2015</string>
+</resources>

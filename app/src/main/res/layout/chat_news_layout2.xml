@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feed6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp">
+
+    <RelativeLayout
+        android:id="@+id/newsProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/pic6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/goal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/newsProfilePic"
+        android:layout_toEndOf="@+id/newsProfilePic"
+        android:layout_toRightOf="@+id/newsProfilePic"
+        android:paddingLeft="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:id="@+id/feedSourceLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/uname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Goal"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="8:00 pm"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/news_feed_background_stripe"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/imageViewLayout"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/imageManu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentTop="false"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/manu" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fname3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imageViewLayout"
+                android:text="Van Gaal: Manchester United's lack of goals is a concern."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

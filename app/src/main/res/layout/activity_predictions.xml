@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/meLayout"
+    tools:context="com.boutline.sports.activity.MeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/predictionsActivityToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/leftMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_menu_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:paddingLeft="15dp"
+            android:id="@+id/predictionsToolbarTextView"
+            android:text="@string/predictions"/>
+
+        <ImageView
+            android:id="@+id/rightMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:paddingRight="20dp"
+            android:src="@mipmap/ic_right_menu" />
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:id="@+id/dividerhr"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_below="@id/predictionsActivityToolbar"/>
+    <RelativeLayout
+        android:id="@+id/feed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dividerhr"
+        android:padding="10dp">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/chat_predictions_layout" />
+    </RelativeLayout>
+</RelativeLayout>

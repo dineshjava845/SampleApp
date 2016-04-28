@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.boutline.sports.activity.PushNotificationsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/pushNotificationsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/pushNotificationsBackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black" />
+
+        <TextView
+            android:id="@+id/pushNotificationsToolbarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Push Notifications"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:id="@+id/hrliner"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray"
+        android:layout_below="@id/pushNotificationsToolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hrliner"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/headerTitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/sendPushNotificationsTextView"
+                    style="@style/Theme.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send push notifications for:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/allActivityOptionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerTitleLayout">
+                <TextView
+                    android:id="@+id/pushNotificationsAllActivityTextView"
+                    style="@style/Theme.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Activity"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <CheckBox android:id="@+id/checkbox_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/newsOptionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/allActivityOptionLayout">
+                <TextView
+                        android:id="@+id/pushNotificationsNewsTextView"
+                        style="@style/Theme.Form"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="News for me"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                <CheckBox android:id="@+id/checkbox_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fixturesOptionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newsOptionLayout">
+                <TextView
+                    android:id="@+id/pushNotificationsFixturesTextView"
+                    style="@style/Theme.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fixtures for me"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <CheckBox android:id="@+id/checkbox_fixtures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/chatOptionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fixturesOptionLayout">
+                <TextView
+                    android:id="@+id/pushNotificationsChatTextView"
+                    style="@style/Theme.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat Messages"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <CheckBox android:id="@+id/checkbox_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/nothingOptionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chatOptionLayout">
+                <TextView
+                    android:id="@+id/pushNotificationsNothingTextView"
+                    style="@style/Theme.Form"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nothing"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <CheckBox android:id="@+id/checkbox_nothing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

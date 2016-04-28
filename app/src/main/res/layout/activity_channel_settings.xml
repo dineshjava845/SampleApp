@@ -1,0 +1,290 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    tools:context="com.boutline.sports.activity.ChannelSettingsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/channelSettingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/channelSettingsBackImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_white" />
+
+        <TextView
+            android:id="@+id/channelSettingsToolbarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Channel Settings"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/channelSettingsToolbar">
+
+        <RelativeLayout
+            android:id="@+id/channelSettingsTopRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/channelSettingsChannelNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                android:text="#manufanclub"
+                android:textColor="@color/darkgray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/channelSettingsTagsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channelSettingsChannelNameTextView"
+                android:layout_marginTop="10dp"
+                android:text="Tags :"
+                android:textColor="@color/darkgray"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/channelSettingsTagRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channelSettingsTagsTextView"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/channelSettingsTagsListLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/channelSettingsTags"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/channelSettingsTag1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/lightgray"
+                            android:padding="5dp"
+                            android:text="#EPL"
+                            android:textColor="@color/darkgray"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/channelSettingsTag2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/channelSettingsTag1"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_toEndOf="@+id/channelSettingsTag1"
+                            android:layout_toRightOf="@+id/channelSettingsTag1"
+                            android:background="@color/lightgray"
+                            android:padding="5dp"
+                            android:text="#UEFA"
+                            android:textColor="@color/darkgray"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:padding="3dp"
+                        android:id="@+id/channelSettingsEditTagsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/channelSettingsTags"
+                        android:layout_centerHorizontal="true"
+                        android:text="Edit"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/channelSettingsMembersLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channelSettingsTagRelativeLayout"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/channelSettingsMembersImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_members" />
+
+                <TextView
+                    android:id="@+id/channelSettingsMembersTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/channelSettingsMembersImageView"
+                    android:layout_toRightOf="@+id/channelSettingsMembersImageView"
+                    android:paddingLeft="5dp"
+                    android:text="Members"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/channelSettingsInviteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channelSettingsMembersLayout"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/channelSettingsInviteImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_invite" />
+
+                <TextView
+                    android:id="@+id/channelSettingsInviteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/channelSettingsInviteImageView"
+                    android:layout_toRightOf="@+id/channelSettingsInviteImageView"
+                    android:paddingLeft="5dp"
+                    android:text="Invite Others"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/channelSettingsNotificationsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channelSettingsInviteLayout"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/channelSettingsNotifyImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_notification" />
+
+                <TextView
+                    android:id="@+id/channelSettingsNotifyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/channelSettingsNotifyImageView"
+                    android:layout_toRightOf="@+id/channelSettingsNotifyImageView"
+                    android:paddingLeft="5dp"
+                    android:text="Push Notifications Settings"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/channelSettingsStarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channelSettingsNotificationsLayout"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/channelSettingsStarImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/channelSettingsStarTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/channelSettingsStarImageView"
+                    android:layout_toRightOf="@+id/channelSettingsStarImageView"
+                    android:paddingLeft="5dp"
+                    android:text="Star this Channel"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/channelSettingsCreatedByTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channelSettingsStarLayout"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="#manufanclub was created by @anandsatyan on 12th Jan 2014."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/channelSettingsAdvancedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/channelSettingsCreatedByTextView"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/channelSettingsAdvancedImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_settings" />
+
+                <TextView
+                    android:id="@+id/channelSettingsAdvancedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/channelSettingsAdvancedImageView"
+                    android:layout_toRightOf="@+id/channelSettingsAdvancedImageView"
+                    android:paddingLeft="5dp"
+                    android:text="Advanced Settings"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
